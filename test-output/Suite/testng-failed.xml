@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="framework.Reporting"/>
+  </listeners>
+  <test thread-count="2" name="Test1(failed)">
+    <parameter name="platformVersion_" value="8.1.0"/>
+    <parameter name="App_Package_Name_" value="com.amazon.mShop.android.shopping"/>
+    <parameter name="udid_" value="67e0c248"/>
+    <parameter name="App_Activity_Name_" value="com.amazon.mShop.splashscreen.StartupActivity"/>
+    <parameter name="deviceName_" value="XP8800"/>
+    <classes>
+      <class name="TestCases.Sanity">
+        <methods>
+          <include name="init"/>
+          <include name="validateAmazonLoginPage"/>
+          <include name="startServer"/>
+        </methods>
+      </class> <!-- TestCases.Sanity -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
